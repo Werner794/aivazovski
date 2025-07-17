@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="index.css">
     <title>Aivazovski</title>
 </head>
+
 <body>
     <header class="header" aria-label="Header">
         <div class="container">
@@ -32,11 +34,50 @@
         </div>
     </header>
 
+    <div class="mobile-navigation" aria-label="mobile navigation">
+        <label for="toggler-id" aria-label="open-close mobile navigation menu">
+            <svg class="mobile-navigation__burger" aria-label="burger-icon">
+                <use href="assets/sprites/Sprites.svg#burger-icon"></use>
+            </svg>
+        </label>
+
+        <input type="checkbox" id="toggler-id" class="mobile-navigation__toggler">
+
+        <nav class="mobile-navigation__menu" aria-label="Mob header navigation">
+            <ul class="mobile-navigation__list" aria-label="Mob header navigation list">
+                <li>
+                    <a class="mobile-navigation__link" aria-label="link to home" href="#home-id">Home</a>
+                </li>
+                <li>
+                    <a class="mobile-navigation__link" aria-label="link to about" href="#about-id">About</a>
+                </li>
+                <li>
+                    <a class="mobile-navigation__link" aria-label="link to history" href="#history-id">History</a>
+                </li>
+                <li>
+                    <a class="mobile-navigation__link" aria-label="link to portfolio" href="#portfolio-id">Portfolio</a>
+                </li>
+                <li>
+                    <a class="mobile-navigation__link" aria-label="link to contacts" href="#contacts-id">Contacts</a>
+                </li>
+            </ul>
+
+
+            <label for="toggler-id" class="mobile-navigation__close" aria-label="open-close mobile navigation menu">
+                <svg class="mobile-navigation__cross" aria-label="cross-icon">
+                    <use href="assets/sprites/Sprites.svg#cross-icon"></use>
+                </svg>
+            </label>
+
+        </nav>
+    </div>
+
     <main aria-label="main">
         <section class="home" aria-label="home section" id="home-id">
             <div class="container">
                 <h1 class="home__title" aria-label="title">Ivan Constantinovich Aivazovski</h1>
-                <p class="home__description" aria-label="description">Russian marine painter of Armenian origin, collector, philanthropist</p>
+                <p class="home__description" aria-label="description">Russian marine painter of Armenian origin,
+                    collector, philanthropist</p>
                 <img class="home__img" src="assets/webp/Home.webp" alt="photo of Aivazovski">
             </div>
         </section>
@@ -44,13 +85,21 @@
         <section class="about" aria-label="about section" id="about-id">
             <div class="container">
                 <h2 class="about__title" aria-label="About title">About</h2>
-                <h3 class="about__subtitle-ru" aria-label="About subtitle ru">Ива́н Константи́нович Айвазо́вский – русский живописец-маринист армянского происхождения, коллекционер, меценат.</h3>
-                <p class="about__description-ru">Будучи художником с мировой известностью, Иван Константинович Айвазовский предпочитал жить и работать на своей родине — в Крыму. Айвазовский наиболее известен своими морскими пейзажами, которые составляют больше половины его работ. Художник считается одним из величайших маринистов всех времён.</p>
+                <h3 class="about__subtitle-ru" aria-label="About subtitle ru">Ива́н Константи́нович Айвазо́вский –
+                    русский живописец-маринист армянского происхождения, коллекционер, меценат.</h3>
+                <p class="about__description-ru">Будучи художником с мировой известностью, Иван Константинович
+                    Айвазовский предпочитал жить и работать на своей родине — в Крыму. Айвазовский наиболее известен
+                    своими морскими пейзажами, которые составляют больше половины его работ. Художник считается одним из
+                    величайших маринистов всех времён.</p>
 
                 <hr class="divider">
 
-                <h3 class="about__subtitle-eng" aria-label="About subtitle eng">Ivan Konstantinovich Aivazovsky - Russian marine painter of Armenian origin, collector, philanthropist.</h3>
-                <p class="about__description-eng" aria-label="About description eng">Being a world famous artist, Ivan Konstantinovich Aivazovsky preferred to live and work in his homeland - in the Crimea. Aivazovsky is best known for his seascapes, which make up more than half of his work. The artist is considered one of the greatest marine painters of all time.</p>
+                <h3 class="about__subtitle-eng" aria-label="About subtitle eng">Ivan Konstantinovich Aivazovsky -
+                    Russian marine painter of Armenian origin, collector, philanthropist.</h3>
+                <p class="about__description-eng" aria-label="About description eng">Being a world famous artist, Ivan
+                    Konstantinovich Aivazovsky preferred to live and work in his homeland - in the Crimea. Aivazovsky is
+                    best known for his seascapes, which make up more than half of his work. The artist is considered one
+                    of the greatest marine painters of all time.</p>
             </div>
         </section>
 
@@ -58,7 +107,8 @@
             <div class="container">
                 <h2 class="history__title">History</h2>
                 <img src="assets/webp/history.jpeg" alt="Aivazovski`s home" class="history__img">
-                <p class="history__description" aria-label="history description">Дом в котором родился Айвазовский | The house where Aivazovsky was born </p>
+                <p class="history__description" aria-label="history description">Дом в котором родился Айвазовский | The
+                    house where Aivazovsky was born </p>
             </div>
         </section>
 
@@ -66,18 +116,20 @@
             <div class="container">
                 <h2 class="portfolio__title">Portfolio</h2>
                 <img src="assets/webp/Portfolio1.jpeg" alt="Winter wagon train on the way" class="portfolio__img">
-                <p class="portfolio__description" aria-label="picture 1 description">Зимний обоз в пути, 1857 г. | Winter wagon train on the way, 1857</p>
+                <p class="portfolio__description" aria-label="picture 1 description">Зимний обоз в пути, 1857 г. |
+                    Winter wagon train on the way, 1857</p>
                 <img src="assets/webp/Portfolio2.jpeg" alt="" class="portfolio__img">
                 <p class="portfolio__description" aria-label="picture 2 description">Радуга, 1873 г. | Rainbow, 1873</p>
                 <img src="assets/webp/Portfolio3.jpeg" alt="" class="portfolio__img">
-                <p class="portfolio__description" aria-label="picture 3 description">Неаполитанский залив утром, 1893 г. | Gulf of Naples in the morning, 1893</p>
+                <p class="portfolio__description" aria-label="picture 3 description">Неаполитанский залив утром, 1893
+                    г. | Gulf of Naples in the morning, 1893</p>
             </div>
         </section>
 
     </main>
 
     <footer class="contacts" aria-label="contacts section" id="contacts-id">
-        <div class="container" >
+        <div class="container">
             <h2 class="contacts__title">Contacts</h2>
             <button class="contacts__button">
                 <a href="https://ayvazovskiy.su" target="_blank" class="button__link">ayvazovskiy.su</a>
@@ -110,4 +162,5 @@
         </div>
     </footer>
 </body>
+
 </html>
